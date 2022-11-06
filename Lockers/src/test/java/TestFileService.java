@@ -18,7 +18,7 @@ public class TestFileService {
 	
 	@Before
 	public void setUp() {
-		fs = new FileService();
+		fs = FileService.getService();
 	}
 	
 	@Test

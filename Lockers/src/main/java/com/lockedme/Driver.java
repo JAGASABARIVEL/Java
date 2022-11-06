@@ -1,23 +1,30 @@
 package com.lockedme;
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 import java.util.Scanner;
 
 public class Driver {
 
-	static FileService fs = new FileService();
-	static Scanner sc = new Scanner(System.in);
-	final static String header = "\n\n\t\t\t LockedMe.com";
-	final static String author = "\n\t\t      Author Jagasabarivel K\n";
-	final static String fileheader = "\t" + "Id" + "\t|" + " File Name";
+	// To access the file service for performing the operations.
+	private static FileService fs = FileService.getService();
+	
+	// Scanner object to be used across.
+	private static Scanner sc = new Scanner(System.in);
+	
+	// Getting configuration from configuration.properties.
+	private final static ResourceBundle rb = ResourceBundle.getBundle("configuration");
+	private final static String header = rb.getString("header");
+	private final static String author = rb.getString("author");
+	private final static String fileheader = rb.getString("fileheader");
 	
 	
 	public Driver() {
 	}
+	
 
 	private static void homeScreenDisplay() {
-		System.out.println(header);
-		System.out.println(author);
+		System.out.println(header + "\n" + author);
 	}
 	
 	private static void homeScreen() throws IOException {

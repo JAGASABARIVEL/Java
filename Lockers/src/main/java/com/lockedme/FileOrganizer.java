@@ -1,6 +1,6 @@
 package com.lockedme;
 
-public class FileOrganizer {
+public class FileOrganizer implements Comparable<FileOrganizer> {
 
 	private int fileid;
 	private String filename;
@@ -34,5 +34,12 @@ public class FileOrganizer {
 	public boolean equals(Object obj) {
 		return this.filename == ((FileOrganizer)obj).filename;
 	}
+
+	@Override
+	public int compareTo(FileOrganizer organizer) {
+		return this.getFilename().compareTo(organizer.getFilename());
+	}
+	
+	
 
 }
