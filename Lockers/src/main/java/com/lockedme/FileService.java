@@ -50,10 +50,10 @@ public class FileService implements IFileService{
 		return filefounderr;
 	}
 	
-	/*
+	/**
 	 * API to create a file
 	 * @filename : filename to be created.
-	 * */
+	 */
 	public boolean createFile(String filename) throws IOException{
 		index++;
 		File file = new File(fileobject.getAbsolutePath() + "\\" + filename);
@@ -64,18 +64,18 @@ public class FileService implements IFileService{
 		return false;
 	}
 
-	/*
+	/**
 	 * API to display all the files in a directory.
-	 * */
+	 */
 	public List<FileOrganizer> displayFiles() {
 		Collections.sort(fileserver);
 		return fileserver;
 	}
 
-	/*
+	/**
 	 *  API to search a file in a directory
 	 * @filename : Filename to be searched. 
-	 * */
+	 */
 	public boolean searchFile(String filename) {
 		boolean filefounderr = true;
 		filefounderr = quickSearch(filename, filefounderr);
@@ -85,10 +85,10 @@ public class FileService implements IFileService{
 			return true;
 	}
 
-	/*
+	/**
 	 * API to delete a file
 	 * @filename : Filename to be deleted.
-	 * */
+	 */
 	public boolean deleteFile(String filename) {
 		FileOrganizer objecttobedeleted=null;
 		for (FileOrganizer organizer : fileserver) {
