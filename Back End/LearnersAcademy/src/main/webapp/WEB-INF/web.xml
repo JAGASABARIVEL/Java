@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<display-name>LogoutServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.server.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddServlets</servlet-name>
+  	<display-name>AddServlets</display-name>
+  	<description></description>
+  	<servlet-class>com.server.AddServlets</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SearchStudentsServlet</servlet-name>
+  	<display-name>SearchStudentsServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.server.SearchStudentsServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegistrationServlets</servlet-name>
+  	<display-name>RegistrationServlets</display-name>
+  	<description></description>
+  	<servlet-class>com.server.RegistrationServlets</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginServlets</servlet-name>
+  	<display-name>LoginServlets</display-name>
+  	<description></description>
+  	<servlet-class>com.server.LoginServlets</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ClassDetailServlets</servlet-name>
+  	<display-name>ClassDetailServlets</display-name>
+  	<description></description>
+  	<servlet-class>com.server.ClassDetailServlets</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AddSrudentServlet</servlet-name>
+  	<display-name>AddSrudentServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.server.AddStudentServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddTeacherServlet</servlet-name>
+  	<display-name>AddTeacherServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.server.AddTeacherServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddSubjectServlet</servlet-name>
+  	<display-name>AddSubjectServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.server.AddSubjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddClassServlet</servlet-name>
+  	<display-name>AddClassServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.server.AddClassServlet</servlet-class>
+  </servlet>
+
+  
+  
+  
+  
+  
+  
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddServlets</servlet-name>
+  	<url-pattern>/addDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SearchStudentsServlet</servlet-name>
+  	<url-pattern>/searchStudents</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegistrationServlets</servlet-name>
+  	<url-pattern>/registrations</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginServlets</servlet-name>
+  	<url-pattern>/logins</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ClassDetailServlets</servlet-name>
+  	<url-pattern>/classDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AddSrudentServlet</servlet-name>
+  	<url-pattern>/addStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddTeacherServlet</servlet-name>
+  	<url-pattern>/addTeacher</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddSubjectServlet</servlet-name>
+  	<url-pattern>/addSubject</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddClassServlet</servlet-name>
+  	<url-pattern>/addClass</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>    
