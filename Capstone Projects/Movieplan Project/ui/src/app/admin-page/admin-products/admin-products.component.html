@@ -1,0 +1,9 @@
+
+<div class="card two bg-white px-5 py-5 mb-3 bord">
+    <p class="ms-5 mb-5">ADD PRODUCTS</p>
+    <div class="form-group"><input type="text" class="form-control" id="phone" [(ngModel)]="mName" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="phone">Name</label></div>
+    <div class="form-group"><input type="text" class="form-control" id="name" [(ngModel)]="mImage" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="name">Image</label></div>
+    <div class="form-group"><input type="number" class="form-control" id="password" [(ngModel)]="mTickets" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="password">Price</label></div>
+    <div class="form-group"><input type="number" class="form-control" id="password" [(ngModel)]="mPrice" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="password">Quantity</label></div>
+    <button (click)="save()" class="btn btn-light btn-block btn-lg mt-1 mb-2"><span>Save<i class="fas fa-long-arrow-alt-right ml-2"></i></span></button>
+</div>

@@ -1,0 +1,12 @@
+
+<div class="card two bg-white px-5 py-5 mb-3 bord">
+    <p class="ms-5 mb-5">ADD PRODUCTS</p>
+    <div class="form-group"><input type="text" class="form-control" id="phone" [(ngModel)]="pName" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="phone">Name</label></div>
+    <div class="form-group"><input type="text" class="form-control" id="name" [(ngModel)]="pImage" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="name">Image</label></div>
+    <div class="form-group"><input type="text" class="form-control" id="password" [(ngModel)]="pBrand" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="password">Brand</label></div>
+    <div class="form-group"><input type="text" class="form-control" id="phone" [(ngModel)]="pDesc" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="phone">Description</label></div>
+    <div class="form-group"><input type="text" class="form-control" id="name" [(ngModel)]="pCategory" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="name">Category</label></div>
+    <div class="form-group"><input type="number" class="form-control" id="password" [(ngModel)]="pPrice" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="password">Price</label></div>
+    <div class="form-group"><input type="number" class="form-control" id="password" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}" required><label class="form-control-placeholder" for="password">Quantity</label></div>
+    <button (click)="save()" class="btn btn-light btn-block btn-lg mt-1 mb-2"><span>Save<i class="fas fa-long-arrow-alt-right ml-2"></i></span></button>
+</div>
