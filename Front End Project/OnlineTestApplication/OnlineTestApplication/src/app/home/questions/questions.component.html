@@ -1,0 +1,54 @@
+<div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-8 col-lg-8">
+            <div class="border">
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                        <h4>MCQ Quiz</h4><span>({{index + 1}} of {{totalQuestion}})</span>
+                    </div>
+                </div>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">{{questions[index].question}}</h5>
+                    </div>
+
+                    <div class="ans ml-2" for="option1">
+                        <label class="radio">
+                            <input type="radio" name="flexRadioDefault" [value]="questions[index].choice.choice1" (click)="onChange($event.target);">
+                            <span>{{questions[index].choice.choice1}}</span>
+                        </label>
+                    </div>
+
+                    <div class="ans ml-2" for="option2">
+                        <label class="radio"> 
+                            <input type="radio" name="flexRadioDefault" [value]="questions[index].choice.choice2" (click)="onChange($event.target);"> 
+                            <span>{{questions[index].choice.choice2}}</span>
+                        </label>
+                    </div>
+
+                    <div class="ans ml-2" for="option3">
+                        <label class="radio"> 
+                            <input type="radio" name="flexRadioDefault" [value]="questions[index].choice.choice3" (click)="onChange($event.target);">
+                            <span>{{questions[index].choice.choice3}}</span>
+                        </label>
+                    </div>
+
+                    <div class="ans ml-2" for="option4">
+                        <label class="radio"> 
+                            <input type="radio" name="flexRadioDefault" [value]="questions[index].choice.choice4" (click)="onChange($event.target);"> 
+                            <span>{{questions[index].choice.choice4}}</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                    <button (click)="onPrevious();" class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                    <button id="next" (click)="onNext($event);" class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+            </div>
+        </div>
+        <div class="col-md-4" *ngIf="answerSubmitted">
+            <app-review [results] = "results"></app-review>
+        </div>
+    </div>
+</div>
