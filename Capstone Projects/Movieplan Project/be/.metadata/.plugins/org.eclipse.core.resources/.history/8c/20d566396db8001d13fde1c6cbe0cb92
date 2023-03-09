@@ -1,0 +1,18 @@
+package com.mymovieplan.repository;
+
+import java.time.LocalDate;
+
+public class MovieModel {
+
+	private Integer mId;
+	
+	private String mName;
+	
+	private String mImage;
+	
+	private Integer tickets;
+	
+	private Integer price;
+	
+	private LocalDate localDate;
+}

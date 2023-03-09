@@ -1,0 +1,52 @@
+package com.mymovieplan.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import com.mymovieplan.enums.Roles;
+
+@Entity
+@Table(name="UsersTable")
+public class Users {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer uId;
+	
+	private String uName;
+	
+	private Long uPhone;
+	
+	private String uPassword;
+
+	public String getuName() {
+		return uName;
+	}
+
+	public void setuName(String uName) {
+		this.uName = uName;
+	}
+
+	public Long getuPhone() {
+		return uPhone;
+	}
+
+	public void setuPhone(Long uPhone) {
+		this.uPhone = uPhone;
+	}
+
+	public String getuPassword() {
+		return uPassword;
+	}
+
+	public void setuPassword(String uPassword) {
+		this.uPassword = uPassword;
+	}
+	
+	
+	
+}

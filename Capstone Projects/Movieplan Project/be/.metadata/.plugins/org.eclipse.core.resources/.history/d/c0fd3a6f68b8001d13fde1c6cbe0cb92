@@ -1,0 +1,5 @@
+package com.mymovieplan.model;
+
+public class UserModel {
+
+}

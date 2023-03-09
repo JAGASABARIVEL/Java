@@ -1,0 +1,15 @@
+package com.mymovieplan.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mymovieplan.model.CartModel;
+
+@RestController
+public class CartController {
+	
+	public ResponseEntity<String> addToCart(@RequestBody CartModel cartModel){
+		
+	}
+}

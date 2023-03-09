@@ -1,0 +1,20 @@
+package com.mymovieplan.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mymovieplan.entity.Cart;
+import com.mymovieplan.repository.CartRepo;
+
+@Service
+public class CartService {
+
+	@Autowired
+	private CartRepo cartRepo;
+	
+	public boolean addMovie(Cart cart) {
+		try {
+			cartRepo.save(cart);
+		}
+	}
+}

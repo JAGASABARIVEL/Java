@@ -1,0 +1,37 @@
+package com.mymovieplan.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mymovieplan.entity.Cart;
+import com.mymovieplan.entity.Movie;
+import com.mymovieplan.entity.Users;
+import com.mymovieplan.repository.CartRepo;
+
+@Service
+public class CartService {
+
+	@Autowired
+	private CartRepo cartRepo;
+	
+	public boolean addMovie(Users users, Movie movie) {
+		try {
+			if (findUserInCart(users)) {
+				
+			}
+			cartRepo.save(cart);
+		}
+		catch (Exception e) {
+			return false;
+		}
+		return true;
+	}
+	
+	public boolean findUserInCart(Users user) {
+		return cartRepo.findAll().get(0).getUser_id().equals(user);
+	}
+	
+	public Cart getCart(Users users) {
+		return cartRepo.findAll().get(0).get;
+	}
+}

@@ -1,0 +1,6 @@
+package com.mymovieplan.model;
+
+public class CartModel {
+
+	private Integer mId;
+}

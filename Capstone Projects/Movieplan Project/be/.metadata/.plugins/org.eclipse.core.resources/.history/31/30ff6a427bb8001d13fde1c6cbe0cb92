@@ -1,0 +1,10 @@
+package com.mymovieplan.model;
+
+public class CartViewModel {
+
+	private Integer cId;
+	
+	private String mName;
+	
+	private Integer mPrice;
+}

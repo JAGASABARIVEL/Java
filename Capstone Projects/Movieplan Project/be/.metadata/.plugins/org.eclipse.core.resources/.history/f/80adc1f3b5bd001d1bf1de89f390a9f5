@@ -1,0 +1,62 @@
+package com.mymovieplan.model;
+
+public class CartViewModel {
+
+	private Integer cId;
+	
+	private String mName;
+	
+	private String mImage;
+	
+	private Integer mPrice;
+
+	
+	public CartViewModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	public CartViewModel(Integer cId, String mName, String mImage, Integer mPrice) {
+		super();
+		this.cId = cId;
+		this.mName = mName;
+		this.mImage = mImage;
+		this.mPrice = mPrice;
+	}
+
+
+	public Integer getcId() {
+		return cId;
+	}
+
+	public void setcId(Integer cId) {
+		this.cId = cId;
+	}
+
+	public String getmName() {
+		return mName;
+	}
+
+	public void setmName(String mName) {
+		this.mName = mName;
+	}
+
+	public String getmImage() {
+		return mImage;
+	}
+
+	public void setmImage(String mImage) {
+		this.mImage = mImage;
+	}
+
+	public Integer getmPrice() {
+		return mPrice;
+	}
+
+	public void setmPrice(Integer mPrice) {
+		this.mPrice = mPrice;
+	}
+	
+	
+}
